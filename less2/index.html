@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+	<!-- Задание 1 -->
+<script> 
+var a = 1, b = 1, c, d;
+c = ++a ; console.log ( c ) ;           // 2 ++a означает что мы к переменной а прибавляем единицу.Выводим 1+1=2
+d = b++ ; console.log ( d ) ;           // 1 Прибавляет к операнду единицу, но результатом выражения будет являться первоначальное значение операнда. выводим 1+1=1
+c = ( 2+ ++a ) ; console.log( c ) ;      // 5 т.к. в первом примере мы прибавили единицу в переменную 'a' ее значение стало равно 2.В данном примере прибавляем еще единицу и 'a' становится равно 3, отсюда ответ 5
+d = ( 2+ b++) ; console.log( d ) ;      // 4т.к. во втором примере мы прибавили единицу в переменную 'b'  ее значение стало равно 2.В данном примере прибавляем еще единицу и 'b' становится равно 3, но выводим предыдущее значение т.е. 2, отсюда получаем 4 
+
+
+// каждую переменную увеличили по 2 раза
+console.log ( a );                    // 3
+console.log ( b );                    // 3
+</script>
+     <!-- Задание 2 -->
+<script>
+var a = 2 ;
+var x = 1 + ( a *= 2 ) ; //так как действие в скобках умножает переменную 'a' на 2 и присваивает ей полученное значение. Получаем x = 1 + 4
+console.log ( x ) ;
+</script>
+
+
+     <!-- Задание 3 -->
+
+<script>
+		var a = + prompt ( 'Введите число ' ) ;
+		var b = + prompt ( 'Введите число ' ) ;
+		if ( a > 0 && b > 0 ) {
+		x = a - b;
+		console.log ( x ) ;
+		} else if ( a < 0 && b < 0 ) {
+			x = a * b ;
+			console.log ( x ) ;
+			}
+		  else if ( a > 0 && b < 0 || a < 0 && b > 0 ) {
+		  x = a + b ;
+		  console.log ( x ) ;
+		  }
+	</script>
+
+	<!-- Задание 4 -->
+
+<script>
+	var a = + prompt ( 'Введите число от 1 до 15' ) ;
+
+  switch ( a ) {
+        case 1:
+            console.log(a++);
+        case 2:
+            console.log(a++);
+        case 3:
+            console.log(a++);
+        case 4:
+            console.log(a++);
+        case 5:
+            console.log(a++);
+        case 6:
+            console.log(a++);
+        case 7:
+            console.log(a++);
+        case 8:
+            console.log(a++);
+        case 9:
+            console.log(a++);
+        case 10:
+            console.log(a++);
+        case 11:
+            console.log(a++);
+        case 12:
+            console.log(a++);
+        case 13:
+            console.log(a++);
+        case 14:
+            console.log(a++);
+        case 15:
+            console.log(a++);
+    }
+
+</script>
+
+     <!-- Задание 5 -->
+
+
+ <script >
+
+ var a = + prompt ( 'Введите число') ;
+ var b = + prompt ( 'Введите число') ;
+
+function plus( a , b ) { //сложение
+    return ( a + b);
+  }
+result = plus ( a , b );
+console.log ( 'Сумма равна : ' + result ) ;
+
+function sub ( a , b) { // вычитание
+    return ( a - b );
+}
+result = sub ( a , b );
+console.log ( 'Разность равна : ' + result ) ;
+
+function mult ( a , b ) { // умножение
+    return ( a * b ) ; 
+}
+result = mult ( a , b );
+console.log ( 'произведение равно : ' + result ) ;
+
+function div ( a , b ) { // деление
+    return ( a / b) ;
+}
+result = div ( a , b );
+console.log ( ' Частное равно : ' + result ) ;
+
+</script>
+
+ <!-- Задание 6 -->
+  
+ 
+ <script>
+ var arg1 = +prompt('1 число: ');
+ var arg2 = +prompt('2 число: ');
+ var operation = prompt('Введите название операции: сложение, вычитание, умножение, деление, : ');
+ var result;
+ 
+function mathOperation(arg1, arg2, operation) {
+    switch ( operation ) {
+        case 'сложение' :
+             return arg1 + arg2 ;
+             break;
+        case 'вычитание' :
+             return  arg1 - arg2 ;
+             break;
+         case 'умножение' :
+             return  arg1 * arg2 ;
+             break;
+        case 'деление' :
+             return arg1 / arg2 ;
+             break;
+
+ 
+    }
+}
+ 
+result = mathOperation(arg1, arg2, operation);
+console.log ( 'Результат: ' + result ) ;
+ </script>
+
+</body>
+</html>
