@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	var obj=prompt('Введите число от 0 до 999');
+	var obj2=[]; obj1={}
+	if (Number(obj)>999) {
+	console.log('ошибка');
+
+ }else{ i = 0;
+	while (i<3) {
+ 	obj2[i] = ( obj % 10 );
+ 	obj = ( obj - obj % 10 ) / 10;
+ 	i++;
+		}
+ obj1[ 'Сотни' ] = obj2[2];
+ obj1[ 'Десятки' ] = obj2[1];
+ obj1[ 'Единицы' ] = obj2[0];
+		}
+ console.log(obj1);
+</script>
