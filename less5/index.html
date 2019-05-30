@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <button>Нажать тут</button>
+<div></div>
+<script>
+    ( function ( ) {
+        var mas = ['Hello!', 'Привет!)'];
+        var n = 0;
+        var but = document.getElementsByTagName( "button" ) [ 0 ];
+        var div = document.getElementsByTagName( "div" ) [ 0 ];
+        but.onclick = function () {
+         	div.innerHTML = mas[ n % mas.length ];
+            n++;
+        }
+        but.click();
+    })();
+</script>
+  
+        
+</body>
+</html>
